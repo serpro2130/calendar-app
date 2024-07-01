@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/*Calendar*/
+.calendar {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.calendar-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-navigation button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.calendar-navigation button:hover {
+  background-color: #0056b3;
+}
+
+.calendar-navigation h2 {
+  margin: 0;
+}
+
+.calendar-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background-color: #f1f1f1;
+  padding: 10px 0;
+}
+
+.day-header {
+  text-align: center;
+  font-weight: bold;
+}
+
+.calendar-body {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.empty-day,
+.day {
+  border: 1px solid #ddd;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.empty-day {
+  background-color: #f9f9f9;
+}
+
+.day {
+  cursor: pointer;
+  position: relative;
+}
+
+/*Day*/
+.day {
+  cursor: pointer;
+  position: relative;
+}
+
+.reminders {
+  padding: 5px;
+  max-height: 70px; /* Ajusta según sea necesario */
+  overflow-y: auto;
+}
+
+.reminder {
+  background-color: #eee;
+  margin-bottom: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*Reminder*/
+.reminder-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reminder-form input {
+  padding: 5px;
+}
+
+.reminder-form button {
+  padding: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.reminder-form button:hover {
+  background-color: #0056b3;
+}
